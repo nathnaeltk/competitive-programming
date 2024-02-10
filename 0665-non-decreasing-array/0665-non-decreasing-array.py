@@ -9,10 +9,9 @@ class Solution:
                 if count > 1:
                     return False
 
-                # Choose which element to modify
                 if i >= 2 and nums[i - 2] > nums[i]:
-                    nums[i] = nums[i - 1]  # Modify the current element
+                    nums[i] = nums[i - 1]  
                 else:
-                    nums[i - 1] = nums[i]  # Modify the previous element
+                    nums[i - 1] = nums[i] 
 
         return True
